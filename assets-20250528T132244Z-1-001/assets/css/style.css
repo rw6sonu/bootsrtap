@@ -1,30 +1,34 @@
-
-:root{
+:root {
     --bs-primary: #AB8965;
     --bs-primary-rgb: 171, 137, 101;
     --bs-dark: #181818;
-    --bs-: 'Jost';
+    --bs-font: 'Jost';
 }
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Marcellus';
 }
-a{
+a {
     text-decoration: none;
 }
-ul{
+ul {
     list-style: none;
 }
-.nav-logo img{
+.nav-logo img {
     height: 40px;
-} 
-.dropdown-toggle::after{
+}
+.dropdown-toggle::after {
     content: '\F282';
     border: 0;
     font-family: bootstrap-icons !important;
     font-size: 10px;
     line-height: 15px;
 }
-.dropdown-menu li a:hover{
+.dropdown-menu li a:hover {
     background-color: var(--bs-primary);
     color: white;
 }
@@ -44,7 +48,7 @@ ul{
     --bs-btn-disabled-border-color: white;
     --bs-gradient: none;
 }
-.btn{
+.btn {
     letter-spacing: 2px;
 }
 .carousel,
@@ -55,7 +59,7 @@ ul{
 .carousel img {
     height: 100%;
     object-fit: cover;
-    height:100%;
+    height: 100%;
 }
 .dark-overlay {
     position: absolute;
@@ -63,7 +67,7 @@ ul{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* adjust opacity here */
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 .carousel-item img {
@@ -71,5 +75,20 @@ ul{
     z-index: 0;
 }
 .thin-border {
-  border: 0.5px solid rgba(255, 255, 255, 0.4); /* Light white border */
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
 }
+.shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:47% 47% 0px 0px ;
+    width: 550.702px;
+    height: 555px;
+    z-index: 2;
+    border: 3px solid #AB8965;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);               
+    padding: 20px;
+}
+
