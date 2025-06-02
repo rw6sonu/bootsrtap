@@ -2,8 +2,11 @@
     --bs-primary: #AB8965;
     --bs-primary-rgb: 171, 137, 101;
     --bs-dark: #181818;
-    --bs-font: 'Jost';
+    --bs-title-font: 'Jost';
+    --bs-discription-font: 'Marcellus';
+
 }
+
 h1,
 h2,
 h3,
@@ -12,15 +15,19 @@ h5,
 h6 {
     font-family: 'Marcellus';
 }
+
 a {
     text-decoration: none;
 }
+
 ul {
     list-style: none;
 }
+
 .nav-logo img {
     height: 40px;
 }
+
 .dropdown-toggle::after {
     content: '\F282';
     border: 0;
@@ -28,10 +35,16 @@ ul {
     font-size: 10px;
     line-height: 15px;
 }
+
 .dropdown-menu li a:hover {
     background-color: var(--bs-primary);
     color: white;
 }
+
+.py {
+    margin-bottom: 100px;
+}
+
 .btn-outline-primary {
     --bs-btn-color: white;
     --bs-btn-border-color: white;
@@ -48,19 +61,23 @@ ul {
     --bs-btn-disabled-border-color: white;
     --bs-gradient: none;
 }
+
 .btn {
     letter-spacing: 2px;
 }
+
 .carousel,
 .carousel-inner,
 .carousel-item {
     height: 100vh;
 }
+
 .carousel img {
     height: 100%;
     object-fit: cover;
     height: 100%;
 }
+
 .dark-overlay {
     position: absolute;
     top: 0;
@@ -70,25 +87,140 @@ ul {
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
+
 .carousel-item img {
     position: relative;
     z-index: 0;
 }
+
 .thin-border {
     border: 0.5px solid rgba(255, 255, 255, 0.4);
 }
+
 .shape {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius:47% 47% 0px 0px ;
+    border-radius: 47% 47% 0px 0px;
     width: 550.702px;
     height: 555px;
     z-index: 2;
     border: 3px solid #AB8965;
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);               
+    backdrop-filter: blur(10px);
     padding: 20px;
 }
 
+.image-wrapper {
+    width: 400px;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.jarallax {
+    width: 386.66px;
+    height: 380px;
+    background-image: url('https://themewant.com/products/wordpress/almaris/wp-content/uploads/2024/09/g_1.webp');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 47% 47% 0px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
+}
+
+.jarallax-right {
+    width: 386.66px;
+    height: 380px;
+    background-image: url('https://themewant.com/products/wordpress/almaris/wp-content/uploads/2024/08/3-1-768x768.webp');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 47% 47% 0px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
+}
+
+.rectengle {
+    width: auto;
+    max-width: 1200px;
+    height: 406.2px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    gap:30px;
+}
+
+.service {
+    height:165.50px;
+    border: 1px solid #cccccc;
+    padding: 15px;
+}
+
+.content {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.shape2 {
+    width: 70px;
+    height: 70px;
+    background-color: #AB8965;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+      flex-shrink: 0;
+}
+
+.shape2 img {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+}
+.service-text h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.service-text p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #555;
+}
+.banner-img {
+    width:100%;
+    height: 633.33px;
+    background-image:url('https://themewant.com/products/wordpress/almaris/wp-content/uploads/2024/08/1-1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.shape1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 47% 47% 0px 0px;
+    width: 430.5px;
+    height: 434.48px;
+    z-index: 1;
+    border: 3px solid #AB8965;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
